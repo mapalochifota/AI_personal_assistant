@@ -13,7 +13,7 @@ class Agent:
         api_key = os.environ.get("GEMINI_API_KEY")
         if not api_key:
             raise EnvironmentError(
-                "GEMINI_API_KEY not set. Run: set GEMINI_API_KEY=AIzaSyCaYPWiqW7IU_JkxB3MTQNYHW9EpzT45-I"
+                "GEMINI_API_KEY not set. Run: set GEMINI_API_KEY=""
             )
 
         self.client   = genai.Client(api_key=api_key)
